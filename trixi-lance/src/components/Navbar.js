@@ -38,7 +38,7 @@ const Navbar = () => {
         <Link className="text-center m-auto text-blue-200 font-bold hover:text-blue-300">
           <p>Log in</p>
         </Link>
-        <Link className="text-center m-auto text-blue-200 font-bold hover:text-blue-300">
+        <Link to="sign-in" className="text-center m-auto text-blue-200 font-bold hover:text-blue-300">
           <p>Sign in</p>
         </Link>
       </div>

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-ul {
+    display: flex;
+}
+
+.navbar-links {
+    flex: 1;
+}
+
+.nav-icons {
+    margin: 0 auto;
+}
+
+.navbar-empty-space {
+    flex: 1;
+}
+
+@media screen and (min-width:1024px){
+    .hero-section {
+        display: flex;
+    }
+}

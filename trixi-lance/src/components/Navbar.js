@@ -18,27 +18,27 @@ const Navbar = () => {
         </Link>
         <ul className="flex items-center space-x-4">
           <li>
-            <a href={url} target="_blank" className="text-center m-auto text-blue-200 font-bold hover:text-blue-300">
+            <a href={url} target="_blank" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
               <p>About us</p>
             </a>
           </li>
           <li>
-            <div className="text-center m-auto text-blue-200 font-bold hover:text-blue-300">
+            <div className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
               <button className="font-bold">TrixieBox ˅</button>
             </div>
           </li>
           <li>
-            <Link className="text-center m-auto text-blue-200 font-bold hover:text-blue-300">
+            <Link className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
               <p>Services</p>
             </Link>
           </li>
         </ul>
       </div>
       <div className="flex items-center space-x-4">
-        <Link className="text-center m-auto text-blue-200 font-bold hover:text-blue-300">
+        <Link to="log-in" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
           <p>Log in</p>
         </Link>
-        <Link to="sign-in" className="text-center m-auto text-blue-200 font-bold hover:text-blue-300">
+        <Link to="sign-in" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
           <p>Sign in</p>
         </Link>
       </div>

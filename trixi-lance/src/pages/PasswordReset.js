@@ -1,15 +1,15 @@
 import React from "react";
 
 import Footer from "../components/Footer";
-import SignInCard from "../components/SignInCard";
+import PasswordResetCard from "../components/PasswordResetCard";
 
-const SignIn = () => {
+const PasswordReset = () => {
   return (
     <div class="flex flex-col h-screen justify-between bg-gray-200">
-      <SignInCard className="m-auto" />
+      <PasswordResetCard className="m-auto" />
       <Footer/>
     </div>
   );
 };
 
-export default SignIn;
+export default PasswordReset;

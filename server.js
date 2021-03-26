@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require("cors");
 const routes = require("./api/routes");
 const connectDB = require('./db/Connection');
@@ -7,6 +8,12 @@ const app = express();
 connectDB();
 app.use(express.json({ extended: false }));
 app.use(cors())
+
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  });
 
 const port = process.env.Port || 3001;
 

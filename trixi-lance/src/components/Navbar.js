@@ -2,23 +2,24 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const url = "//google.com"
+import LogInCard from "../components/LogInCard";
+
+import trixieLanceLogoGray from "../assets/img/trixieLanceLogoGray.png";
 
 const Navbar = () => {
   return (
-    <nav className="px-4 py-1 bg-blue-600 flex items-center justify-between">
+    <nav className="px-4 py-1 flex items-center justify-between bg-color-green">
       <div className="flex items-center space-x-4">
         <Link to="/" className="px-2">
           <img
-            src="https://cdn3.iconfinder.com/data/icons/payment-method-1/64/_American_Express-256.png"
-            className="inline-block"
-            width="75px"
+            src={trixieLanceLogoGray}
+            className="h-14"
             alt="Logo"
           />
         </Link>
         <ul className="flex items-center space-x-4">
           <li>
-            <a href={url} target="_blank" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
+            <a href="//google.com" target="_blank" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
               <p>About us</p>
             </a>
           </li>
@@ -28,7 +29,7 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <Link className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
+            <Link to="/" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
               <p>Services</p>
             </Link>
           </li>

@@ -9,7 +9,7 @@ import youtube from "../assets/img/youtube.png";
 
 const Footer = () => {
   return (
-    <div className="flex bg-gray-200">
+    <div className="flex bg-color-gray h-14">
       <div className="flex mx-auto space-x-4">
         <a href="//facebook.com" target="_blank">
           <img src={facebook} width="26" height="26" />

@@ -2,12 +2,15 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import blackNoSlogan from "../assets/img/blackNoSlogan.png";
+
 const LogInCard = () => {
   return (
-    <div className="my-auto mx-auto space-y-5 bg-gray-100 px-14 py-5 rounded-md border-solid border border-gray-400 items-center">
-      <h1 className="text-3xl font-semibold text-center mb-10">
-        TrixieBox Logo
-      </h1>
+    <div className="my-auto mx-auto space-y-5 bg-gray-100 px-10 py-5 rounded-md border-solid border border-gray-400 items-center">
+      <img
+        src={blackNoSlogan}
+        className="text-3xl font-semibold text-center h-12 mb-10"
+      />
       <form className="space-y-5 flex-col">
         <div className="flex text-sm ">
           <input
@@ -32,10 +35,12 @@ const LogInCard = () => {
           </button>
         </div>
         <div className="flex">
-          <Link to="password-reset" className="mx-auto text-blue-400">Forgot password ?</Link>
+          <Link to="password-reset" className="mx-auto text-blue-400">
+            Forgot password ?
+          </Link>
         </div>
       </form>
-      <div className="flex text-gray-400 mt-1">
+      <div className="text-gray-400 mt-1 text-center">
         Don't have account?
         <Link to="/sign-in" className="ml-1 text-blue-400">
           Sign in

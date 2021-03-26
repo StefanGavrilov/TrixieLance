@@ -8,9 +8,10 @@ const SingInComp = () => {
       <h1 className="text-3xl font-semibold text-center mb-10">
         TrixieBox Logo
       </h1>
-      <form className="space-y-5 flex-col">
+      <form className="space-y-5 flex-col" id="signUpForm">
         <div className="flex text-sm">
           <input
+            id="test"
             placeholder="Email or Phone Number"
             type="text"
             className="bg-blue-100 border-solid border border-gray-400 rounded py-2 pl-2 pr-10 mx-auto focus:outline-none focus:border-gray-600"

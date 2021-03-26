@@ -23,11 +23,12 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "craco start",
     "server": "nodemon server.js",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-production": "npm run build && node server.js"
   },
   "eslintConfig": {
     "extends": [

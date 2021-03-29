@@ -24,6 +24,6 @@ app.get('/', (req, res) => {
 
 app.use("/api", routes);
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`)
 })

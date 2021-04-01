@@ -8,41 +8,41 @@ import trixieLanceLogoGray from "../assets/img/trixieLanceLogoGray.png";
 
 const Navbar = () => {
   return (
-    <nav className="px-4 py-1 flex items-center justify-between bg-color-green">
-      <div className="flex items-center space-x-4">
-        <Link to="/" className="px-2">
+    <nav className="navbar bg-color-green">
+      <div className="navbar-main-div space-x-4"> 
+        <Link to="/" className="pl-2">
           <img
             src={trixieLanceLogoGray}
-            className="h-14"
+            className="navbar-logo"
             alt="Logo"
           />
         </Link>
-        <ul className="flex items-center space-x-4">
+        <ul className="navbar-ul space-x-4">
           <li>
-            <a href="//google.com" target="_blank" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
-              <p>About us</p>
-            </a>
+            <Link to="/" className="navbar-button">
+              About us
+            </Link>
           </li>
           <li>
-            <div className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
-              <button className="font-bold">TrixieBox ˅</button>
+            <div className="navbar-button">
+              TrixieBox ˅
             </div>
           </li>
           <li>
-            <Link to="/" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
-              <p>Services</p>
+            <Link to="/" className="navbar-button">
+              Services
             </Link>
           </li>
         </ul>
       </div>
-      <div className="flex items-center space-x-4">
-        <Link to="log-in" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
-          <p>Log in</p>
+{/*       <div className="flex items-center space-x-4">
+        <Link to="log-in" className="navbar-button">
+          Log in
         </Link>
-        <Link to="sign-in" className="text-center m-auto text-blue-100 font-bold hover:text-blue-200">
-          <p>Sign in</p>
+        <Link to="sign-in" className="navbar-button">
+          Sign in
         </Link>
-      </div>
+      </div> */}
     </nav>
   );
 };

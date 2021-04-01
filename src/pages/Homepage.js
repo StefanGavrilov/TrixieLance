@@ -23,12 +23,12 @@ const Homepage = () => {
     fetchData();
     setTimeout(() => {
       setTimedPopup(true)
-    }, 3000)
+    }, 300)
   }, []);
 
 
   return (
-    <div className="relative">
+    <div className="position-relative">
       <Popup trigger={timedPopup} setTrigger={setTimedPopup}/>
       <Navbar />
       <Hero />

@@ -5,7 +5,7 @@ import LogInCard from "../components/LogInCard";
 
 const LogIn = () => {
   return (
-    <div class="flex flex-col h-screen justify-between bg-gray-200">
+    <div class="d-flex h-screen justify-between bg-gray-200">
       <LogInCard className="m-auto" />
       <Footer/>
     </div>

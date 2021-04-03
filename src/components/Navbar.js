@@ -35,14 +35,14 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-{/*       <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4">
         <Link to="log-in" className="navbar-button">
           Log in
         </Link>
         <Link to="sign-in" className="navbar-button">
           Sign in
         </Link>
-      </div> */}
+      </div> 
     </nav>
   );
 };

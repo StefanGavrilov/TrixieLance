@@ -2,47 +2,61 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import LogInCard from "../components/LogInCard";
+/* import LogInCard from "../components/LogInCard"; */
 
-import trixieLanceLogoGray from "../assets/img/trixieLanceLogoGray.png";
+import trixieLanceLogoBothColors from "../assets/img/trixieLanceLogoBothColors.png";
+import flagMacedonia from "../assets/img/flagMacedonia.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-color-green">
-      <div className="navbar-main-div space-x-4"> 
-        <Link to="/" className="pl-2">
-          <img
-            src={trixieLanceLogoGray}
-            className="navbar-logo"
-            alt="Logo"
-          />
+    <nav className="navbar container">
+      <div className="navbar-main-div">
+        <Link to="/" className="navbar-logo1">
+          <img src={trixieLanceLogoBothColors} className="navbar-logo" alt="Logo" />
         </Link>
-        <ul className="navbar-ul space-x-4">
+      </div>
+      <div className="flex items-center">
+        <ul className="navbar-ul space-x-1">
           <li>
-            <Link to="/" className="navbar-button">
-              About us
+            <button className="lanugage">
+              <img src={flagMacedonia} alt="Flag" className="lanugage-img">
+
+              </img>
+            </button>
+          </li>
+          <li>
+            <Link to="/" className="navbar-button1">
+              About us ˅
             </Link>
           </li>
           <li>
-            <div className="navbar-button">
+            <Link to="/" className="navbar-button2">
               TrixieBox ˅
-            </div>
+            </Link>
           </li>
           <li>
-            <Link to="/" className="navbar-button">
-              Services
+            <Link to="/" className="navbar-button3">
+              Services ˅
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="navbar-button4">
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="navbar-button5">
+              Testing
             </Link>
           </li>
         </ul>
-      </div>
-      <div className="flex items-center space-x-4">
-        <Link to="log-in" className="navbar-button">
+        {/*         <Link to="log-in" className="navbar-button">
           Log in
         </Link>
         <Link to="sign-in" className="navbar-button">
           Sign in
-        </Link>
-      </div> 
+        </Link> */}
+      </div>
     </nav>
   );
 };

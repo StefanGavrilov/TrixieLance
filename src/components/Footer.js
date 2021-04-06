@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="left-side-footer">
-        <h5>CONNECT</h5>
+        <h5>GET IN TOUCH</h5>
         <div className="social-medias space-x-8">
           <Link to="//facebook.com" target="_blank" className="social-medias">
             <img src={facebook} width="36" height="36" />

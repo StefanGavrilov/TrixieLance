@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import bothColorsWithSlogan from "../assets/img/bothColorsWithSlogan.png";
+import heroBg from "../assets/img/heroBg.jpg";
 
 const Hero = () => {
   return (
@@ -26,6 +27,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-right-div">
+        <img
+          src={heroBg}
+          className="hero-bg-img"
+        />
       </div>
     </div>
   );

@@ -11,49 +11,61 @@ const Navbar = () => {
   return (
     <nav className="navbar container">
       <div className="navbar-main-div">
-        <Link to="/" className="navbar-logo1">
-          <img src={trixieLanceLogoBothColors} className="navbar-logo" alt="Logo" />
+        <Link to="/" className="navbar-logo-outside-shadow">
+          <img
+            src={trixieLanceLogoBothColors}
+            className="navbar-logo"
+            alt="Logo"
+          />
         </Link>
       </div>
       <div className="flex items-center">
         <ul className="navbar-ul space-x-1">
           <li>
             <button className="lanugage">
-              <img src={flagMacedonia} alt="Flag" className="lanugage-img">
-
-              </img>
+              {
+                <img
+                  src={flagMacedonia}
+                  alt="Flag"
+                  className="lanugage-img"
+                ></img>
+              }
             </button>
           </li>
-          <li>
-            <Link to="/" className="navbar-button1">
-              About us ˅
-            </Link>
+          <li class="dropdown">
+            <button class="dropbtn">About us ˅</button>
+            <div class="dropdown-content">
+              <a href="#">Our story</a>
+              <a href="#">Our mantras</a>
+              <a href="#">Our founders</a>
+            </div>
           </li>
-          <li>
-            <Link to="/" className="navbar-button2">
-              TrixieBox ˅
-            </Link>
+
+          <li class="dropdown">
+            <button class="dropbtn">Services ˅</button>
+            <div class="dropdown-content">
+              <a href="#">Small business consulting</a>
+              <a href="#">Marketing consulting</a>
+              <a href="#">PR and promotion</a>
+            </div>
           </li>
-          <li>
-            <Link to="/" className="navbar-button3">
-              Services ˅
-            </Link>
+
+          <li class="dropdown">
+            <button class="dropbtn">
+              <Link class="no-dropdown-button">TrixieBox</Link>
+            </button>
           </li>
+
           <li>
-            <Link to="/" className="navbar-button4">
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link to="/" className="navbar-button5">
-              Testing
-            </Link>
+            <button class="dropbtn">
+              <Link class="no-dropdown-button">Blog</Link>
+            </button>
           </li>
         </ul>
-        {/*         <Link to="log-in" className="navbar-button">
+        {/*         <Link to="log-in" className="navbar-button2>
           Log in
         </Link>
-        <Link to="sign-in" className="navbar-button">
+        <Link to="sign-in" className="navbar-button2>
           Sign in
         </Link> */}
       </div>

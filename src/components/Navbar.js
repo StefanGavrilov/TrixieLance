@@ -4,16 +4,17 @@ import { Link } from "react-router-dom";
 
 /* import LogInCard from "../components/LogInCard"; */
 
-import trixieLanceLogoBothColors from "../assets/img/trixieLanceLogoBothColors.png";
+
+import bothColorsWithoutSlogan from "../assets/img/bothColorsWithoutSlogan.png";
 import flagMacedonia from "../assets/img/flagMacedonia.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar container">
       <div className="navbar-main-div">
-        <Link to="/" className="navbar-logo-outside-shadow">
+        <Link to="/">
           <img
-            src={trixieLanceLogoBothColors}
+            src={bothColorsWithoutSlogan}
             className="navbar-logo"
             alt="Logo"
           />
@@ -21,6 +22,31 @@ const Navbar = () => {
       </div>
       <div className="flex items-center">
         <ul className="navbar-ul space-x-1">
+
+          <li class="dropdown">
+            <button class="drop-button">About us ˅</button>
+            <div class="dropdown-content">
+              <Link to="/our-story">Our story</Link>
+              <Link to="our-mantras">Our mantras</Link>
+              <Link to="our-founders#">Our founders</Link>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <button class="drop-button">Services ˅</button>
+            <div class="dropdown-content">
+              <Link to="/join-trixie-lance">Join TrixieLance</Link>
+              <Link to="/marketing-consulting">Marketing consulting</Link>
+              <Link to="/pr-and-promotion">PR and promotion</Link>
+              <Link to="/small-business-consulting">Small business consulting</Link>
+            </div>
+          </li>
+
+          <li>
+            <button class="drop-button">
+              <Link to="/blog" class="no-dropdown-button">Blog</Link>
+            </button>
+          </li>
           <li>
             <button className="lanugage">
               {
@@ -30,35 +56,6 @@ const Navbar = () => {
                   className="lanugage-img"
                 ></img>
               }
-            </button>
-          </li>
-          <li class="dropdown">
-            <button class="dropbtn">About us ˅</button>
-            <div class="dropdown-content">
-              <a href="#">Our story</a>
-              <a href="#">Our mantras</a>
-              <a href="#">Our founders</a>
-            </div>
-          </li>
-
-          <li class="dropdown">
-            <button class="dropbtn">Services ˅</button>
-            <div class="dropdown-content">
-              <a href="#">Small business consulting</a>
-              <a href="#">Marketing consulting</a>
-              <a href="#">PR and promotion</a>
-            </div>
-          </li>
-
-          <li class="dropdown">
-            <button class="dropbtn">
-              <Link class="no-dropdown-button">TrixieBox</Link>
-            </button>
-          </li>
-
-          <li>
-            <button class="dropbtn">
-              <Link class="no-dropdown-button">Blog</Link>
             </button>
           </li>
         </ul>

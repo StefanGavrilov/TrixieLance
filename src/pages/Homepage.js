@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import WhatYouGet from "../components/WhatYouGet";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
-import Pricing from "../components/Pricing";
 import Popup from "../components/Popup";
 
 const Homepage = () => {
@@ -33,7 +32,6 @@ const Homepage = () => {
       <Navbar />
       <Hero />
       <WhatYouGet />
-      <Pricing />
       <Testimonials />
       <Footer />
     </div>

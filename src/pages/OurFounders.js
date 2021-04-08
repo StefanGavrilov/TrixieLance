@@ -2,13 +2,13 @@ import React from "react";
 
 import Navbar from "../components/Navbar";
 
-const AboutUs = () => {
+const OurFounders = () => {
   return (
     <div>
       <Navbar />
-      <p>About Us</p>
+      <p>Our Founders</p>
     </div>
   );
 };
 
-export default AboutUs;
+export default OurFounders;

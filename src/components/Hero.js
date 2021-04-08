@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import bothColorsWithSlogan from "../assets/img/bothColorsWithSlogan.png";
+import logoGreen from "../assets/img/logoGreen.png";
 import heroBg from "../assets/img/heroBg.jpg";
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="hero-left-div">
         <h1 className="hero-left-div-h1">
           <img
-            src={bothColorsWithSlogan}
+            src={logoGreen}
             className="hero-left-div-img"
             alt="Logo"
           />
@@ -26,7 +26,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="hero-right-div">
+      <div className="hero-background-div">
         <img
           src={heroBg}
           className="hero-bg-img"

@@ -9,7 +9,7 @@ import youtube from "../assets/img/youtube.png";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="left-side-footer">
         <h5>GET IN TOUCH</h5>
         <div className="social-medias space-x-8">
@@ -36,7 +36,7 @@ const Footer = () => {
         <p>Sign up for our Newsletters with Rouge News and Product Releases</p>
         <input placeholder="Your Email" type="text" className="footer-input" />
       </div>
-    </div>
+    </footer>
   );
 };
 

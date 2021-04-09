@@ -23,18 +23,18 @@ const Navbar = () => {
       <div className="flex items-center">
         <ul className="navbar-ul space-x-1">
 
-          <li class="dropdown">
-            <button class="drop-button">About us ˅</button>
-            <div class="dropdown-content">
+          <li className="dropdown">
+            <button className="drop-button">About us ￬</button>
+            <div className="dropdown-content">
               <Link to="/our-story">Our story</Link>
               <Link to="our-mantras">Our mantras</Link>
               <Link to="our-founders#">Our founders</Link>
             </div>
           </li>
 
-          <li class="dropdown">
-            <button class="drop-button">Services ˅</button>
-            <div class="dropdown-content">
+          <li className="dropdown">
+            <button className="drop-button">Services ￬</button>
+            <div className="dropdown-content">
               <Link to="/join-trixie-lance">Join TrixieLance</Link>
               <Link to="/marketing-consulting">Marketing consulting</Link>
               <Link to="/pr-and-promotion">PR and promotion</Link>
@@ -43,8 +43,8 @@ const Navbar = () => {
           </li>
 
           <li>
-            <button class="drop-button">
-              <Link to="/blog" class="no-dropdown-button">Blog</Link>
+            <button className="drop-button">
+              <Link to="/blog" className="no-dropdown-button">Blog</Link>
             </button>
           </li>
           <li>

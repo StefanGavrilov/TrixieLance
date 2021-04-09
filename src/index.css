@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -17,7 +18,6 @@ html, body {
   height: 3.5rem;
 }
 
-
 .navbar-ul {
   list-style-type: none;
   display: flex;
@@ -32,15 +32,15 @@ html, body {
   padding: 0;
   margin: 6px 15px 0 0;
   border-radius: 50%;
-  background: white;
+  background: transparent;
 }
 
-.lanugage-img{
- height: 100%;
- width: 100%;
+.lanugage-img {
+  height: 100%;
+  width: 100%;
 }
 
-.drop-button   {
+.drop-button {
   text-decoration: none;
   background-color: white;
   color: #59595c;
@@ -50,7 +50,7 @@ html, body {
   border: none;
 }
 
-.drop-button  -link {
+.drop-button -link {
   background-color: white;
   border: none;
 }
@@ -96,10 +96,11 @@ html, body {
   font-weight: 600;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .drop-button   {
-
+.dropdown:hover .drop-button {
   color: #016938;
 }
 
@@ -168,8 +169,6 @@ html, body {
   text-decoration: underline;
   border: none;
 }
-
-
 
 /* ------------------------ Hero ------------------------ */
 .hero {
@@ -261,7 +260,6 @@ html, body {
 }
 
 /* ------------------------ Pricing ------------------------ */
-
 .pricing {
   padding: 1.5rem 0 1.5rem 0;
   border-style: solid;
@@ -330,6 +328,59 @@ html, body {
 .card-div-testimonials {
   text-align: center;
   flex: 1;
+}
+/* ------------------------ Benefits ------------------------ */
+.benefits {
+  margin-bottom: 85px;
+}
+
+.header-div {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.h1-benefits {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  padding: 2.5rem 0 0 0;
+}
+
+.text-header-benefits {
+  width: 35%;
+  margin: 0 auto;
+  padding: 0 0 5px 0;
+}
+
+.features-benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-benefits {
+  display: flex;
+  width: 50%;
+  padding: 15px 20px 15px 20px;
+}
+
+.img-div {
+  margin: auto 22px auto 0;
+}
+
+.card-content span {
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+}
+
+.card-content h4 {
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  color: rgb(68, 68, 68);
 }
 
 /* ------------------------ Footer ------------------------ */
@@ -429,4 +480,3 @@ html, body {
   margin-right: calc(6rem * var(--space-x-reverse));
   margin-left: calc(6rem * calc(1 - var(--space-x-reverse)));
 }
-

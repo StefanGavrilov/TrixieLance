@@ -6,7 +6,9 @@ const OurStory = () => {
   return (
     <div>
       <Navbar />
-      <p>Our Story</p>
+      <div className="container">
+        <p>Our Story</p>
+      </div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ import flagMacedonia from "../assets/img/flagMacedonia.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar container">
+    <nav className="navbar">
       <div className="navbar-main-div">
         <Link to="/">
           <img

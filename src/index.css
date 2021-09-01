@@ -48,6 +48,7 @@ body {
   padding: 8px;
   border-radius: 4px;
   border: none;
+  background-color: rgb(192, 182, 182, 0) ;
 }
 
 .drop-button -link {
@@ -220,6 +221,7 @@ body {
 .hero-background-div {
   position: absolute;
   height: 100%;
+  width: 100%;
   z-index: -1;
 }
 
